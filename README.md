@@ -57,19 +57,5 @@ Before you begin, ensure you have the following installed:
     flutter run
     ```
 
-## Folder Structure
-
-```plaintext
-weather-app-flutter/
-|- android/
-|- ios/
-|- lib/
-   |- models/
-   |- providers/
-   |- screens/
-   |- services/
-   |- widgets/
-|- assets/
-   |- images/
-|- test/
-|- pubspec.yaml
+# Author👨‍💻 
+### I would appreciate if you could give this repository a star 🌟. It would help others to discover this. Thank you for your support [Xoan Dev]👨‍💻
