@@ -33,6 +33,31 @@ class ApiHelper {
     return Weather.fromJson(response);
   }
 
+  // Hourly Weather
+  static Future<HourlyWeather> getHourlyForecast() async {
+    await fetchLocation();
+    final url = _constructForecastUrl();
+    final response = await _fetchData(url);
+    return HourlyWeather.fromJson(response);
+  }
+
+  // Weekly weather
+  static Future<WeeklyWeather> getWeeklyForecast() async {
+    await fetchLocation();
+    final url = _constructWeeklyForecastUrl();
+    final response = await _fetchData(url);
+    return WeeklyWeather.fromJson(response);
+  }
+
+  // Weather by City Name
+  static Future<Weather> getWeatherByCityName({
+    required String cityName,
+  }) async {
+    final url = _constructWeatherByCityUrl(cityName);
+    final response = await _fetchData(url);
+    return Weather.fromJson(response);
+  }
+
   // Build urls
   static String _constructWeatherUrl() =>
       '$baseUrl/weather?lat=$lat$lon&units=metric&appid=${Constants.apiKey}';
@@ -45,4 +70,22 @@ class ApiHelper {
 
   static String _constructWeeklyForecastUrl() =>
       '$WeeklyWeatherUrl&latitude=$lat&longitude=$lon';
+
+  // Fetch Data For a url
+
+  static Future<Map<String, dynamic>> _fetchData(String url) async {
+    try {
+      final response = await dio.get(url);
+
+      if (response.statusCode == 200) {
+        return response.data;
+      } else {
+        printWarning('Lỗi khi lấy dữ liệu từ ${response.statusCode}');
+        throw Exception('Không tải được dữ liệu');
+      }
+    } catch (e) {
+      printWarning('Lỗi khi lấy dữ liệu từ $url: $e');
+      throw Exception('Lỗi khi lấy dữ liệu');
+    }
+  }
 }
