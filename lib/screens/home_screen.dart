@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int _currentPageIndex = 0;
   final _destinations = const [
     NavigationDestination(
       icon: Icon(Icons.home_outlined),
@@ -26,14 +32,30 @@ class HomeScreen extends StatelessWidget {
     ),
   ];
 
+  final _screens = [
+    const Center(child: Text('Home Screen')),
+    const Center(child: Text('Search Screen')),
+    const Center(child: Text('Weather Screen')),
+    const Center(child: Text('Settings Screen')),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home Screen'),
       ),
+      body: _screens[_currentPageIndex],
       bottomNavigationBar: NavigationBar(
         destinations: _destinations,
+        labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
+        selectedIndex: _currentPageIndex,
+        indicatorColor: Colors.transparent,
+        onDestinationSelected: (index) {
+          setState(() {
+            _currentPageIndex = index;
+          });
+        },
       ),
     );
   }
