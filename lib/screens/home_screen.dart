@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app_restapi/screens/weather_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -33,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
 
   final _screens = [
-    const Center(child: Text('Home Screen')),
+    const WeatherScreen(),
     const Center(child: Text('Search Screen')),
     const Center(child: Text('Weather Screen')),
     const Center(child: Text('Settings Screen')),
