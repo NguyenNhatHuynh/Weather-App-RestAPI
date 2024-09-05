@@ -13,21 +13,27 @@ class WeatherInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        WeatherInfoTile(
-          title: 'Temp',
-          value: '${weather.main.temp}°',
-        ),
-        WeatherInfoTile(
-          title: 'Wind',
-          value: '${weather.wind.speed.kmh} km/h',
-        ),
-        WeatherInfoTile(
-          title: 'Humidity',
-          value: '${weather.main.humidity}%',
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 30,
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          WeatherInfoTile(
+            title: 'Temp',
+            value: '${weather.main.temp}°',
+          ),
+          WeatherInfoTile(
+            title: 'Wind',
+            value: '${weather.wind.speed.kmh} km/h',
+          ),
+          WeatherInfoTile(
+            title: 'Humidity',
+            value: '${weather.main.humidity}%',
+          ),
+        ],
+      ),
     );
   }
 }

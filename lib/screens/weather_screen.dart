@@ -42,9 +42,23 @@ class WeatherScreen extends ConsumerWidget {
                   weather.weather[0].description,
                   style: TextStyles.h2,
                 ),
-                const SizedBox(height: 40),
-                WeatherInfo(
-                  weather: weather,
+              ],
+            ),
+            const SizedBox(height: 40),
+            WeatherInfo(
+              weather: weather,
+            ),
+            const SizedBox(height: 40),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  'Today',
+                  style: TextStyles.h2,
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('View full forecast'),
                 ),
               ],
             )
