@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app_restapi/constants/app_colors.dart';
+import 'package:weather_app_restapi/screens/search_screen.dart';
 import 'package:weather_app_restapi/screens/weather_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -36,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final _screens = [
     const WeatherScreen(),
-    const Center(child: Text('Search Screen')),
+    const SearchScreen(),
     const Center(child: Text('Weather Screen')),
     const Center(child: Text('Settings Screen')),
   ];
@@ -46,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: _screens[_currentPageIndex],
       bottomNavigationBar: NavigationBarTheme(
-        data: NavigationBarThemeData(
+        data: const NavigationBarThemeData(
           backgroundColor: AppColors.secondaryBlack,
         ),
         child: NavigationBar(
