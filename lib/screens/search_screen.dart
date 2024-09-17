@@ -31,13 +31,15 @@ class _SearchScreenState extends State<SearchScreen> {
     return Scaffold(
       body: GradientContainer(
         children: [
-          Column(
+          const Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text('Pick Location', style: TextStyles.h1),
-              const SizedBox(height: 30),
+              // SizedBox(height: 30),
               Text(
                 'Find the area or city that you want to know the detailed weather info at this time',
                 style: TextStyles.subtitleText,
+                textAlign: TextAlign.center,
               ),
             ],
           ),
