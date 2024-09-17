@@ -10,7 +10,8 @@ import '../utils/logging.dart';
 
 @immutable
 class ApiHelper {
-  static const baseUrl = 'https://api.openweathermap.org/data/3.0';
+  static const baseUrl = 'https://api.openweathermap.org/data/2.5';
+
   static const weeklyWeatherUrl =
       'https://api.open-meteo.com/v1/forecast?current=&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=auto';
 
@@ -60,7 +61,7 @@ class ApiHelper {
 
   // Build urls
   static String _constructWeatherUrl() =>
-      '$baseUrl/weather?lat=$lat$lon&units=metric&appid=${Constants.apiKey}';
+      '$baseUrl/weather?lat=$lat&lon=$lon&units=metric&appid=${Constants.apiKey}';
 
   static String _constructForecastUrl() =>
       '$baseUrl/forecast?lat=$lat&lon=$lon&units=metric&appid=${Constants.apiKey}';
