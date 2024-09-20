@@ -52,9 +52,11 @@ class _SearchScreenState extends State<SearchScreen> {
                 ),
               ),
               const SizedBox(width: 15),
-              LocationIcon(),
+              const LocationIcon(),
             ],
           ),
+          // Fmouse Cities View
+          FamousCitiesView(),
         ],
       ),
     );
