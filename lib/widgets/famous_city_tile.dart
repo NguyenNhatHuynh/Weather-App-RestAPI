@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:weather_app_restapi/constants/app_colors.dart';
+import 'package:weather_app_restapi/constants/text_styles.dart';
 import 'package:weather_app_restapi/providers/get_weather_by_city_provider.dart';
+import 'package:weather_app_restapi/utils/get_weather_icons.dart';
 
 class FamousCityTile extends ConsumerWidget {
   const FamousCityTile({
@@ -34,13 +36,25 @@ class FamousCityTile extends ConsumerWidget {
                   children: [
                     Column(
                       children: [
-                        Text(weather.main.temp.round().toString()),
+                        Text(
+                          weather.main.temp.round().toString(),
+                          style: TextStyles.h2,
+                        ),
                         const SizedBox(height: 10),
                         Text(
                           weather.weather[0].description,
+                          style: TextStyles.subtitleText,
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 2,
                         ),
                       ],
-                    )
+                    ),
+                    Image.asset(
+                      getWeatherIcon(
+                        weatherCode: weather.weather[0].id,
+                      ),
+                      width: 50,
+                    ),
                   ],
                 ),
               ],
