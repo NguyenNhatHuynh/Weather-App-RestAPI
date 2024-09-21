@@ -29,7 +29,21 @@ class FamousCityTile extends ConsumerWidget {
               vertical: 24,
             ),
             child: Column(
-              children: [],
+              children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Text(weather.main.temp.round().toString()),
+                        const SizedBox(height: 10),
+                        Text(
+                          weather.weather[0].description,
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ],
             ),
           ),
         );
