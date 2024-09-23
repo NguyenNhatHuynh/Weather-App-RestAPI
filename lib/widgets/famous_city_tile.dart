@@ -34,20 +34,22 @@ class FamousCityTile extends ConsumerWidget {
               children: [
                 Row(
                   children: [
-                    Column(
-                      children: [
-                        Text(
-                          weather.main.temp.round().toString(),
-                          style: TextStyles.h2,
-                        ),
-                        const SizedBox(height: 10),
-                        Text(
-                          weather.weather[0].description,
-                          style: TextStyles.subtitleText,
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 2,
-                        ),
-                      ],
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Text(
+                            weather.main.temp.round().toString(),
+                            style: TextStyles.h2,
+                          ),
+                          const SizedBox(height: 10),
+                          Text(
+                            weather.weather[0].description,
+                            style: TextStyles.subtitleText,
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 2,
+                          ),
+                        ],
+                      ),
                     ),
                     Image.asset(
                       getWeatherIcon(
@@ -57,6 +59,14 @@ class FamousCityTile extends ConsumerWidget {
                     ),
                   ],
                 ),
+                Text(
+                  weather.name,
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white.withOpacity(.8),
+                    fontWeight: FontWeight.w400,
+                  ),
+                )
               ],
             ),
           ),
