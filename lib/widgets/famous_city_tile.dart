@@ -26,11 +26,13 @@ class FamousCityTile extends ConsumerWidget {
           elevation: index == 0 ? 8 : 0,
           borderRadius: BorderRadius.circular(25.0),
           child: Padding(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: 16,
               vertical: 24,
             ),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
