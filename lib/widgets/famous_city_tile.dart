@@ -27,7 +27,7 @@ class FamousCityTile extends ConsumerWidget {
           borderRadius: BorderRadius.circular(25.0),
           child: Padding(
             padding: const EdgeInsets.symmetric(
-              horizontal: 16,
+              horizontal: 18,
               vertical: 24,
             ),
             child: Column(
@@ -38,9 +38,10 @@ class FamousCityTile extends ConsumerWidget {
                   children: [
                     Expanded(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            weather.main.temp.round().toString(),
+                            '${weather.main.temp.round().toString()}°',
                             style: TextStyles.h2,
                           ),
                           const SizedBox(height: 10),
