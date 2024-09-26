@@ -29,39 +29,45 @@ class _SearchScreenState extends State<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: GradientContainer(
-        children: [
-          const Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text('Pick Location', style: TextStyles.h1),
-              // SizedBox(height: 30),
-              Text(
-                'Find the area or city that you want to know the detailed weather info at this time',
-                style: TextStyles.subtitleText,
-                textAlign: TextAlign.center,
-              ),
-            ],
+    return const GradientContainer(
+      children: [
+        // Page title
+        Align(
+          alignment: Alignment.center,
+          child: Text(
+            'Pick Location',
+            style: TextStyles.h1,
           ),
-          const SizedBox(height: 40),
-          Row(
-            children: [
-              Expanded(
-                child: RoundTextField(
-                  controller: _controller,
-                ),
-              ),
-              const SizedBox(width: 15),
-              const LocationIcon(),
-            ],
-          ),
+        ),
 
-          const SizedBox(height: 30),
-          // Fmouse Cities View
-          const FamousCitiesView(),
-        ],
-      ),
+        SizedBox(height: 20),
+
+        // Page subtitle
+        Text(
+          'Find the area or city that you want to know the detailed weather info at this time',
+          style: TextStyles.subtitleText,
+          textAlign: TextAlign.center,
+        ),
+
+        SizedBox(height: 40),
+
+        // Pick location row
+        Row(
+          children: [
+            // Choose city text field
+            Expanded(
+              child: RoundTextField(),
+            ),
+            SizedBox(width: 15),
+
+            LocationIcon(),
+          ],
+        ),
+
+        SizedBox(height: 30),
+
+        FamousCitiesView(),
+      ],
     );
   }
 }

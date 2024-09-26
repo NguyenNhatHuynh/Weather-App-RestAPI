@@ -3,10 +3,11 @@ import 'package:weather_app_restapi/constants/app_colors.dart';
 
 class RoundTextField extends StatelessWidget {
   const RoundTextField({
-    required this.controller,
+    super.key,
+    this.controller,
   });
 
-  final TextEditingController controller;
+  final TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
