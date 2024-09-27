@@ -103,7 +103,7 @@ class WeeklyForecastTile extends StatelessWidget {
             text: '$temp',
             color: AppColors.white,
             superScript: '°C',
-            superscriptColor: AppColors.white,
+            superscriptColor: AppColors.grey,
           ),
 
           // weather icon

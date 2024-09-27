@@ -24,7 +24,9 @@ class FamousCitiesView extends StatelessWidget {
           onTap: () {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (_) => WeatherDetailScreen(cityName: city.name),
+                builder: (_) => WeatherDetailScreen(
+                  cityName: city.name,
+                ),
               ),
             );
           },
