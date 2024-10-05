@@ -17,7 +17,7 @@ class SettingsScreen extends StatelessWidget {
               'Settings',
               style: TextStyle(
                 fontSize: 50,
-                color: Colors.white,
+                color: Color.fromARGB(255, 37, 35, 35),
               ),
               textAlign: TextAlign.center,
             ),

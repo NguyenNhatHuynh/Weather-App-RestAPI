@@ -66,7 +66,7 @@ class FamousCityTile extends ConsumerWidget {
                   weather.name,
                   style: TextStyle(
                     fontSize: 18,
-                    color: Colors.white.withOpacity(.8),
+                    color: const Color.fromARGB(255, 84, 78, 78).withOpacity(.8),
                     fontWeight: FontWeight.w400,
                   ),
                 )

@@ -27,7 +27,7 @@ class RoundTextField extends StatelessWidget {
           border: InputBorder.none,
           fillColor: Colors.white,
           focusColor: Colors.white,
-          hintText: 'Search',
+          hintText: 'Tìm kiếm',
           hintStyle: TextStyle(
             color: Colors.grey,
             fontWeight: FontWeight.w400,

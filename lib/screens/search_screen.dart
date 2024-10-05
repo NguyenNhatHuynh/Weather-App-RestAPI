@@ -35,7 +35,7 @@ class _SearchScreenState extends State<SearchScreen> {
         Align(
           alignment: Alignment.center,
           child: Text(
-            'Pick Location',
+            'Chọn Vị trí',
             style: TextStyles.h1,
           ),
         ),
@@ -44,7 +44,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
         // Page subtitle
         Text(
-          'Find the area or city that you want to know the detailed weather info at this time',
+          'Tìm khu vực hoặc thành phố mà bạn muốn biết thông tin thời tiết chi tiết tại thời điểm này',
           style: TextStyles.subtitleText,
           textAlign: TextAlign.center,
         ),

@@ -79,7 +79,7 @@ class WeatherDetailScreen extends ConsumerWidget {
         error: (error, stackTrace) {
           return const Center(
             child: Text(
-              'An error has occurred',
+              'Đã xảy ra lỗi',
             ),
           );
         },

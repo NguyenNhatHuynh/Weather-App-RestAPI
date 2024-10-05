@@ -54,12 +54,12 @@ class WeatherScreen extends ConsumerWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Text(
-                  'Today',
+                  'Hôm nay',
                   style: TextStyles.h2,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: const Text('View full forecast'),
+                  child: const Text('Xem dự báo đầy đủ'),
                 ),
               ],
             ),

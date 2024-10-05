@@ -17,7 +17,7 @@ class ForecastReportScreen extends StatelessWidget {
         const Align(
           alignment: Alignment.center,
           child: Text(
-            'Forecast Report',
+            'Dự báo thời tiết',
             style: TextStyles.h1,
           ),
         ),
@@ -29,7 +29,7 @@ class ForecastReportScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             const Text(
-              'Today',
+              'Hôm nay',
               style: TextStyles.h2,
             ),
             Text(
@@ -51,7 +51,7 @@ class ForecastReportScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              'Next Forecast',
+              'Dự báo hàng tuần',
               style: TextStyles.h2,
             ),
             Icon(

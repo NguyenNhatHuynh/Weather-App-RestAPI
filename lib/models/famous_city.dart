@@ -26,4 +26,34 @@ List<FamousCity> famousCities = [
     lat: -6.2088,
     lon: 106.8456,
   ),
+  const FamousCity(
+    name: 'Kuala Lumpur', // Malaysia
+    lat: 3.139,
+    lon: 101.6869,
+  ),
+  const FamousCity(
+    name: 'Manila', // Philippines
+    lat: 14.5995,
+    lon: 120.9842,
+  ),
+  const FamousCity(
+    name: 'Singapore', // Singapore
+    lat: 1.3521,
+    lon: 103.8198,
+  ),
+  const FamousCity(
+    name: 'Yangon', // Myanmar
+    lat: 16.8409,
+    lon: 96.1735,
+  ),
+  const FamousCity(
+    name: 'Vientiane', // Lào
+    lat: 17.9757,
+    lon: 102.6331,
+  ),
+  const FamousCity(
+    name: 'Phnom Penh', // Campuchia
+    lat: 11.5564,
+    lon: 104.9282,
+  ),
 ];

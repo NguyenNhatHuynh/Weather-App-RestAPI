@@ -45,23 +45,31 @@ class _HomeScreenState extends State<HomeScreen> {
               setState(() => _currentPageIndex = index),
           destinations: const [
             NavigationDestination(
-              icon: Icon(Icons.home_outlined, color: Colors.white),
-              selectedIcon: Icon(Icons.home, color: Colors.white),
+              icon: Icon(Icons.home_outlined,
+                  color: Color.fromARGB(255, 48, 48, 48)),
+              selectedIcon:
+                  Icon(Icons.home, color: Color.fromARGB(255, 54, 53, 53)),
               label: '',
             ),
             NavigationDestination(
-              icon: Icon(Icons.search_outlined, color: Colors.white),
-              selectedIcon: Icon(Icons.search, color: Colors.white),
+              icon: Icon(Icons.search_outlined,
+                  color: Color.fromARGB(255, 54, 53, 53)),
+              selectedIcon:
+                  Icon(Icons.search, color: Color.fromARGB(255, 54, 53, 53)),
               label: '',
             ),
             NavigationDestination(
-              icon: Icon(Icons.wb_sunny_outlined, color: Colors.white),
-              selectedIcon: Icon(Icons.wb_sunny, color: Colors.white),
+              icon: Icon(Icons.wb_sunny_outlined,
+                  color: Color.fromARGB(255, 54, 53, 53)),
+              selectedIcon:
+                  Icon(Icons.wb_sunny, color: Color.fromARGB(255, 54, 53, 53)),
               label: '',
             ),
             NavigationDestination(
-              icon: Icon(Icons.settings_outlined, color: Colors.white),
-              selectedIcon: Icon(Icons.settings, color: Colors.white),
+              icon: Icon(Icons.settings_outlined,
+                  color: Color.fromARGB(255, 54, 53, 53)),
+              selectedIcon:
+                  Icon(Icons.settings, color: Color.fromARGB(255, 54, 53, 53)),
               label: '',
             ),
           ],
