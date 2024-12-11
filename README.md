@@ -21,7 +21,16 @@ For state management, the app utilizes [Riverpod](https://riverpod.dev/), ensuri
 
 ## Screenshots
 
-[Current Weather](assets/images/image1.png)
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+    <img src="https://i.imgur.com/IW1qN0e.png" alt="Image 1" style="width: 20%; height: auto; object-fit: cover;">
+    <img src="https://imgur.com/t0PrywE.png" alt="Image 2" style="width: 20%; height: auto; object-fit: cover;">
+    <img src="https://imgur.com/R1U92ly.png" alt="Image 3" style="width: 20%; height: auto; object-fit: cover;">
+    <img src="https://imgur.com/fAAPo5i.png" alt="Image 4" style="width: 20%; height: auto; object-fit: cover;">
+</div>
+
+
+
+
 <!--![3-hour Forecast](screenshots/3_hour_forecast.png)-->
 
 ## Getting Started
