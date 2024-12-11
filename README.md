@@ -12,7 +12,7 @@ For state management, the app utilizes [Riverpod](https://riverpod.dev/), ensuri
 - [x] **3-hour Forecast:** Get a 3-hour forecast for up to 5 days, perfect for planning your day.
 - [x] **Weekly Forecast:** View the weather outlook for the next 7 days.
 - [x] **Weather for Famous Cities:** Quickly access weather data for major cities around the globe.
-- [ ] **Detailed Weather Info:** Access in-depth weather details, including wind speed and humidity.
+- [x] **Detailed Weather Info:** Access in-depth weather details, including wind speed and humidity.
 
 ## APIs Used
 
@@ -59,3 +59,4 @@ Before you begin, ensure you have the following installed:
 
 # Author👨‍💻 
 ### I would appreciate if you could give this repository a star 🌟. It would help others to discover this. Thank you for your support [Xoan Dev]👨‍💻
+- [x] status Project: Final
