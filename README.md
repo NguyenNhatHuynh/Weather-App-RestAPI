@@ -19,9 +19,9 @@ For state management, the app utilizes [Riverpod](https://riverpod.dev/), ensuri
 - **OpenWeatherMap API:** Provides detailed current weather, 3-hour forecasts, and weekly forecasts.
 - **Open-Meteo API:** Supplies additional weather data to enhance accuracy and reliability.
 
-<!--## Screenshots-->
+## Screenshots
 
-<!--[Current Weather](screenshots/current_weather.png)-->
+[Current Weather](assets/images/image1.png)
 <!--![3-hour Forecast](screenshots/3_hour_forecast.png)-->
 
 ## Getting Started
